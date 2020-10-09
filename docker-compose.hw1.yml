@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+    hw:
+        image: enhariharan/infinite-loop
+        networks:
+            - hwnetone
+            - common
+
+networks:
+    hwnetone:
+        name: hwnetone
+    common:
+        external: true
+        name: hwexternal
